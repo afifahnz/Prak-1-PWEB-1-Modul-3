@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+
+}
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+header .kiri {
+    display: flex;
+    align-items: center;
+}
+header .logo-kiri{
+    width: 100px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo-kanan{
+    width: 300px;
+    height: 160px;
+    margin-left: 15px;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+nav ul.menu > li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul.menu > li > a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+/* Gaya untuk hover di menu utama */
+nav ul.menu > li > a:hover {
+    background-color: #444;
+}
+
+/* Gaya dasar untuk dropdown */
+nav ul.menu .dropdown {
+    display: none; /* Sembunyikan dropdown secara default */
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    top: 100%; /* Tampilkan dropdown di bawah item induk */
+    left: 0;
+    z-index: 1;
+}
+
+/* Tampilkan dropdown saat kursor berada di atas item induknya */
+nav ul.menu > li:hover .dropdown,
+nav ul.menu .dropdown li:hover .dropdown {
+    display: block;
+}
+
+/* Gaya untuk item dropdown */
+nav ul.menu .dropdown li {
+    position: relative;
+}
+
+nav ul.menu .dropdown li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #444;
+}
+
+nav ul.menu .dropdown li a:hover {
+    background-color: #555;
+}
+
+/* Gaya untuk submenu dropdown (level lebih dalam) */
+nav ul.menu .dropdown li .dropdown {
+    top: 0;
+    left: 100%; /* Tampilkan submenu di samping kanan */
+}
+
+#konten {
+    display: flex;
+    flex-direction: row;
+}
+#leftbar {
+    width: 20%;
+    background-color:#333;
+    padding: 5px;
+}
+#main-content {
+    background-color: #f4f4f4;
+    width: 80%;
+    padding: 10px;
+}
+#footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.video {
+    margin-bottom: 15px;
+    background-color: #333;
+}
+.galeri {
+        margin-bottom: 15px;
+        background-color: #f4f4f4;
+}
+img {
+        width: 280px;
+        height: 150px;
+}

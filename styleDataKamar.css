@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+}
+
+/* Table cells styling */
+td {
+    padding: 10px;
+}
+
+/* Input and select fields styling */
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* "Simpan Data" button styling */
+button[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+/* "Batal" button styling */
+button[type="reset"] {
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+/* Centering and spacing buttons */
+td[colspan="2"] {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Success message styling */
+#pesanSimpan {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
